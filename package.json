@@ -3,12 +3,12 @@
   "name": "prospec",
   "version": "0.1.0",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "replaceFilePaths": "node replacer.js",
     "dev": "next dev",
     "build": "next build && next export -o build && npm run replaceFilePaths",
     "start": "next start",
-    "export": "next export -o build && npm run replaceFilePaths",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -17,7 +17,14 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "eslint": "^8.20.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^9.0.0",
     "next": "11.1.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
