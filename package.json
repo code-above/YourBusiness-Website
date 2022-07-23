@@ -10,6 +10,7 @@
     "build": "next build && next export -o build && npm run replaceFilePaths",
     "start": "next start",
     "predeploy": "npm run build",
+    "lint": "next lint",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
