@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clock from '../../src/assets/clock.svg'
 import icon2 from '../../src/assets/icon2.png'
-import icon from '../../src/assets/icon.png'
+import statsicon from '../../src/assets/statsicon.png'
 
 
 
@@ -29,7 +29,7 @@ export default function InfoBox() {
 
              <div className="pt-3 px-16 md:px-4">
                 <Image
-                    src={icon}
+                    src={statsicon}
                     />
                      <h3 className="font-bold pt-6">Lorem Ipsum</h3>
                     <p className=" max-w-xs font-thin pb-8 md:pb-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
