@@ -4,13 +4,21 @@ module.exports = {
       assetPrefix: './'
     }
   };
+  module.exports = {
+    images: {
+      loader: 'default',
+      path: '',
+    },
+  };
 
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
 
 module.exports = withPlugins([
   [optimizedImages, {
-    /* config for next-optimized-images */
+    /* config for next-optimize
+    d-images */
+    path:'/',
   }],
 
   // your other plugins here
@@ -22,5 +30,12 @@ module.exports = {
       config.resolve.fallback.fs = false;
     }
     return config;
+  },
+};
+
+module.exports = {
+  images: {
+    loader: 'akamai',
+    path: '',
   },
 };
