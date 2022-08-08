@@ -2,7 +2,7 @@
   "homepage": "https://code-above.github.io/my-landing-page",
   "name": "prospec",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "commonjs",
   "scripts": {
     "replaceFilePaths": "node replacer.js",
